@@ -6,23 +6,23 @@ body {
 
 #header { 
        background-color: dimgray; 
-        height: 3.5rem; 
-         border-bottom: 0.5rem solid lightseagreen;
+       height: 3.5rem; 
+       border-bottom: 0.5rem solid lightseagreen;
 }
 
 h1 {
        font-size: 1.5rem; 
-        color: white;
+       color: white;
 }
 
 #title {
        height: 25.5rem;
-        background-color: lightgray;
-         text-align: center;
+       background-color: lightgray;
+       text-align: center;
 }
 
 * {
-       margin: 0%; 
+       margin: 0; 
 }
 
 #about {
@@ -35,13 +35,13 @@ h1 {
 
 h3 { 
       color: lightseagreen; 
-       width: 17rem;
-        margin: 0% auto;
-         text-align: center;
-          padding-top: 0.5rem;
+      width: 17rem;
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 0.5rem;
 }
 
 #fav {
        display: flex; 
-        justify-content: space-evenly;
+       justify-content: space-evenly;
 }
