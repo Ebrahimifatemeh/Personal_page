@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="grid2c.css" >
+        <link rel="stylesheet" href="grid4c.css">
+        <title>Airport.kg</title>
+    </head>
+    <body>
+        <div> 
+            <button class="buttonMenu">MENU</button>
+            <button onclick='switchStyle()' style='position: absolute; top:0; right:0;'>Style</button>
+            <img src='https://cdn.imgchest.com/files/myd5cr2k54b.png' style='position: absolute; top:0; left:0;z-index:-1'>
+        
+    </div>
+        <div class="container">
+            <div class="box1">The sky starts with us!</div>
+            <div class="box2"></div>
+            <div class="box3">
+                <div class="tab1">About Company</div>
+                <div class="tab2">To Passengers</div>
+                <div class="tab3">Services</div>
+                <div class="tab4">Press-Service</div>
+            </div>
+            <div class="box4">4</div>
+            <div class="box5">
+                <ul class="navigation">
+                    <li class="air">JSC "MAM"</li>
+                    <li class="fli">BISHKEK</li>
+                    <li class="DES">OSH</li>
+                    <li class="IS"> ISSYK-KUL</li>
+                    <li class="KAR">KARAKOL</li>
+                    <li class="BAT"> BATKEN</li>
+                </ul>
+            </div>
+            <div class="box6">EN</div>
+            <div class="box7">7</div>
+        </div>
+        <script>
+            function switchStyle() {
+            let style = document.querySelector('.style');
+            if (style.getAttribute('href') == 'grid4c.css') {
+            style.setAttribute('href', 'grid2c.css');
+            } else {
+            style.setAttribute('href', 'grid4c.css');
+            }
+            }
+            </script>
+            </body>
+        
+    </body>
+</html>

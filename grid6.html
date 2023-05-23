@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 10</title>
+    <link rel="stylesheet" href="grid2b.css" class="style">
+    
+</head>
+<body>
+   
+    <button onclick='switchStyle()' style='position: absolute; top:0; right:0;'>Style</button>
+    <img src='https://cdn.imgchest.com/files/myd5cr2k54b.png' style='position: absolute; top:0; left:0;z-index:-1'>
+
+
+    <div class="container">
+        <div class="box1">
+          1
+        </div>
+        <div class="box2">
+          <img src="logo.jpeg">
+        </div>
+        <div class="box3">
+          Hero Heading
+        </div>
+        <div class="box4">
+          <div class="News">
+            <ul class="news_articles">
+              <li class="Article1">
+                <a href="http://www.airport.kg/press-center/news/1260">
+                  <div class="Media">
+                    <img src="http://www.airport.kg/images/posts/small/1684821263.jpg" alt="Media 1"> 
+                  </div>
+                  <div class="Media.heading">
+                    MAM OJSC: Regular flights from Osh to Krasnoyarsk have increased 
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <ul class="news_articles">
+              <li class="article2">
+                <a href="http://www.airport.kg/press-center/news/1258">
+                  <div class="Media2">
+                    <img src="http://www.airport.kg/images/posts/small/1684754259.jpg" alt="Media2">
+                  </div>
+                  <div class="Media.heading2">
+                    <p>JSC "MAM" held a sightseeing tour for schoolchildren</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <ul class="news_articles">
+              <li class="article3">
+                <a href="http://www.airport.kg/press-center/news/1257">
+                  <div class="Media3">
+                    <img src="http://www.airport.kg/images/posts/small/1684753520.jpg" alt="Media3">
+                  </div>
+                  <div class="Media3">
+                    <p>Congratulations from the Chairman of the Board of JSC "MAM" on Mother's Day!</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="box5">
+          <ul>
+            <li class="air">JSC "MAM"</li>
+            <li class="fli">BISHKEK</li>
+            <li class="DES">OSH</li>
+            <li class="IS">ISSYK-KUL</li>
+            <li class="KAR">KARAKOL</li>
+            <li class="BAT">BATKEN</li>
+          </ul>
+        </div>
+        <div class="box6">6
+                <div class="tab1">About Company</div>
+                <div class="tab2">To Passengers</div>
+                <div class="tab3">Services</div>
+                <div class="tab4">Press-Service</div>
+            </div>
+        </div>
+        <div class="box7">7</div>
+      </div>
+
+      <script>
+        function switchStyle() {
+        let style = document.querySelector('.style');
+        if (style.getAttribute('href') == 'grid4b.css') {
+        style.setAttribute('href', 'grid2b.css');
+        } else {
+        style.setAttribute('href', 'grid4b.css');
+        }
+        }
+        </script>
+        </body>
+
