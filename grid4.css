@@ -25,16 +25,18 @@ body {
 .container {
     display: grid;
     grid-template-rows:
-    minmax(35px, auto) minmax(73px, auto) minmax(101px, auto) minmax(530px, auto) minmax(80px, auto) minmax(80px, auto) minmax(530px, auto) ;
+    minmax(35px, auto) minmax(73px, auto) minmax(101px, auto) minmax(530px, auto) ;
     /* 35px 73px 101px 530px 80px 530px */
 
     grid-template-areas: 
     "one one one one"
-   "five two two two"
-   "six three three three"
-   "four seven seven seven";
+    "two three three three"
+    "five three three three"
+    "six four four four"
+    "six seven seven seven";
+ 
 
-   grid-template-columns: minmax(20px,101px) minmax(20px,390px) minmax(20px,458px) ;
+   grid-template-columns: minmax(20px,101px) minmax(20px,390px) minmax(20px,458px) minmax(20px,1170px);
    
 
   
@@ -42,20 +44,24 @@ body {
 .container > * {
     border: 2px dashed blue;
 }
-.box1 .img{
-        margin-top: 20px;
-        height: 97px;
-        max-width: 257px;
+.box1 {
+    width: 1170px;
 }
+
 .box2 {
     grid-area: two;
-    background-image: url(http://www.airport.kg/images/footer-bg.jpg);
+    width: 103px;
+    height: 73px;
+}
+.box3{
+    grid-area: three;
+   background-image: url(http://www.airport.kg/images/footer-bg.jpg);
     color: #034EA2;
     display: flex; 
     align-items: center; 
     justify-content: center;
-    width: 847px;
-    height: 424px;
+    width: 1070px;
+    height: 459px;
     font-size: 2rem;
     background-blend-mode: multiply; 
     background-color: grey;
@@ -63,8 +69,9 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
-.box3{
-    grid-area: three;
+
+.box2.img{
+    width: 36px;
 }
    
  
