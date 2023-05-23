@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     box-sizing: border-box;
@@ -25,16 +24,18 @@ body {
 .container {
     display: grid;
     grid-template-rows:
-    minmax(35px, auto) minmax(73px, auto) minmax(101px, auto) minmax(530px, auto) minmax(80px, auto) minmax(80px, auto) minmax(530px, auto) ;
+    minmax(35px, auto) minmax(73px, auto) minmax(101px, auto) minmax(530px, auto) ;
     /* 35px 73px 101px 530px 80px 530px */
 
     grid-template-areas: 
     "one one one one"
-   "five two two two"
-   "six three three three"
-   "four seven seven seven";
+    "two three three three"
+    "five three three three"
+    "six four four four"
+    "six seven seven seven";
+ 
 
-   grid-template-columns: minmax(20px,101px) minmax(20px,390px) minmax(20px,458px) ;
+   grid-template-columns: minmax(20px,101px) minmax(20px,390px) minmax(20px,458px) minmax(20px,1170px);
    
 
   
@@ -42,20 +43,24 @@ body {
 .container > * {
     border: 2px dashed blue;
 }
-.box1 .img{
-        margin-top: 20px;
-        height: 97px;
-        max-width: 257px;
+.box1 {
+    width: 1170px;
 }
+
 .box2 {
     grid-area: two;
-    background-image: url(http://www.airport.kg/images/footer-bg.jpg);
+    width: 103px;
+    height: 73px;
+}
+.box3{
+    grid-area: three;
+   background-image: url(http://www.airport.kg/images/footer-bg.jpg);
     color: #034EA2;
     display: flex; 
     align-items: center; 
     justify-content: center;
-    width: 847px;
-    height: 424px;
+    width: 1070px;
+    height: 459px;
     font-size: 2rem;
     background-blend-mode: multiply; 
     background-color: grey;
@@ -63,8 +68,9 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
-.box3{
-    grid-area: three;
+
+.box2.img{
+    width: 36px;
 }
    
  
@@ -72,66 +78,7 @@ body {
 .box4{
     grid-area: four;
 }
-.heading div {
-    /*   border: 2px dashed red; */
-    }
-    .heading {
-      display: flex;
-      justify-content: space-between;
-      
-      color: #074f75;
-      font-family: 'Segoe UI', Tahoma, sans-serif ;
-      
-      /*border-bottom: 1px solid #0c58ca;*/
-    }
-    .heading .News {
-      flex-basis: 240px;
-      font-size: 24px;
-    }
-        
-    kgairport {
-      display: flex;
-      flex-wrap: wrap;
-      list-style-type: none;
-      padding: 0;
-      
-      font-family: 'Segoe UI', Tahoma, sans-serif;
-    }
-    kgairport > * {
-    /*   border: 2px solid yellow; */
-      padding-left: 10px;
-      padding-bottom: 10px;
-      width: 260px;
-      display: flex; 
-      align-items: center;
-      flex-direction: column;
-      font-size: 14px;
-    }
-    kgairport .title {
-      color: #074F7F;
-      font-size: 16px;
-      font-weight: 700;
-      margin-bottom: 20px;
-    }
-    kg.news .time {
-      color: #034EA2;
-      font-size: 13px;
-      padding-top: 15px;
-    }
-    
-    kg.news .photo1 img {
-      height: 140px;
-      
-    }
-    kg.news .photo2 img {
-        height: 140px;
-    }
-     kg.news .photo3 img {
-    height: 140px;
-    }
-     kg.news .photo4 img {
-    height: 140px;
-    }
+
  
 
 .box5{
