@@ -1,0 +1,219 @@
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body {
+    background-image: none;
+    opacity: 1;
+    background-repeat: no-repeat;
+    max-width: 1170px;
+    min-height: 752px;
+    font-size: 2rem;
+    color: blue;
+ 
+}
+body > img:nth-of-type(1){
+    display: none;
+
+}
+body {
+    background-image: none;
+    opacity: 1;
+}
+.container {
+    display: grid;
+    grid-template-rows:
+    minmax(35px, auto) minmax(73px, auto) minmax(101px, auto) minmax(530px, auto) ;
+    /* 35px 73px 101px 530px 80px 530px */
+
+    grid-template-areas: 
+    "one one one one"
+    "two three three three"
+    "five three three three"
+    "six four four four"
+    "six seven seven seven";
+ 
+
+   grid-template-columns: minmax(20px,101px) minmax(20px,390px) minmax(20px,458px) minmax(20px,1170px);
+   
+
+  
+}
+.container > * {
+    border: 2px dashed blue;
+}
+.box1 {
+    width: 1170px;
+}
+
+.box2 {
+    grid-area: two;
+    width: 103px;
+    height: 73px;
+}
+.box3{
+    grid-area: three;
+   background-image: url(http://www.airport.kg/images/footer-bg.jpg);
+    color: #034EA2;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    width: 1070px;
+    height: 459px;
+    font-size: 2rem;
+    background-blend-mode: multiply; 
+    background-color: grey;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box2.img{
+    width: 36px;
+}
+   
+ 
+
+.box4{
+    grid-area: four;
+}
+.box4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  overflow: hidden;
+
+  }
+  
+  .box4 img {
+    width: 100%;
+    height: auto;
+     object-fit: cover;
+  }
+  
+  .box4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Set the desired overlay color and opacity */
+    z-index: 1;
+  }
+  
+
+.box5{
+    grid-area: five;
+}
+.box5{
+
+}
+ul { 
+    display: flex;
+    height: 100%;
+    justify-content: end;
+    flex-direction: column;
+    /*align-items: center;*/
+    font-size: 14px;
+    font-family: 'PT Sans', Tahoma, Helvetica, sans-serif;
+    font-weight: 400;
+    flex-wrap:wrap;
+   padding: 0;
+    color: #FFFFFF;
+    list-style:none;
+    background-color: #034EA2;
+   text-transform: uppercase;
+
+
+
+}
+li{
+    border-bottom: 1px solid white;
+    padding: 20px;
+} 
+
+.air{
+    
+}
+.fli{
+    
+}
+.DES{
+}
+    
+.IS{
+   
+}
+.KAR{
+   
+}
+.BAT{
+    
+}
+.box6{
+    grid-area: six;
+}
+.tab1,
+.tab2,
+.tab3,
+.tab4 {
+    height: 100%;
+    padding-top: 36px;
+    flex-grow: 1;
+    text-align: center;
+    color: rgb(0, 0, 233);
+    font-weight: bolder;
+}
+
+.tab1 {
+    background-image: url(http://www.airport.kg/images/subnav/about_main_1.jpg);
+    background-repeat: no-repeat;
+    background-position: 0%;
+}
+.tab2 {
+    background-image: url(http://www.airport.kg/images/subnav/about_main_1.jpg);
+    background-repeat: no-repeat;
+    background-position: 0%;
+}
+.tab3 {
+    background-image: url(http://www.airport.kg/images/subnav/service_1.jpg);
+    background-repeat: no-repeat;
+    background-position: 0%;
+}
+.tab4 {
+    background-image: url(http://www.airport.kg/images/subnav/press_1.jpg);
+    background-repeat: no-repeat;
+    background-position: 0%;
+}
+
+.box7{
+    grid-area: seven;
+}
+
+  .box7 p {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+  }
+@media (max-width: 500px) {
+.container{
+    grid-template-columns: 100%;
+    
+    grid-template-areas:
+    "one"
+    "two"
+    "three"
+    "four"
+    "five"
+    "six"
+    "seven";
+}
+}
